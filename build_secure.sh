@@ -39,12 +39,25 @@ echo "📦 Step 2: Copying files..."
 cp -r "$DIST_DIR/obfuscated/"* "$DIST_DIR/" 2>/dev/null || true
 rm -rf "$DIST_DIR/obfuscated"
 
-# Copy requirements and other files
+# Copy ALL necessary directories and files
+echo "📦 Copying project files..."
 cp requirements.txt "$DIST_DIR/"
-[ -f config.py ] && cp config.py "$DIST_DIR/" || true
-[ -d assets ] && cp -r assets "$DIST_DIR/" || true
-[ -f Info.plist ] && cp Info.plist "$DIST_DIR/" || true
-[ -f entitlements.plist ] && cp entitlements.plist "$DIST_DIR/" || true
+
+# Copy all directories (ui, core, security, etc.)
+for dir in ui core security assets; do
+    if [ -d "$dir" ]; then
+        echo "  → Copying $dir/"
+        cp -r "$dir" "$DIST_DIR/"
+    fi
+done
+
+# Copy config files
+for file in config.py Info.plist entitlements.plist; do
+    if [ -f "$file" ]; then
+        echo "  → Copying $file"
+        cp "$file" "$DIST_DIR/"
+    fi
+done
 
 # Step 3: Create installer script
 echo ""
