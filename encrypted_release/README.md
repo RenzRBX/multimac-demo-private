@@ -1,33 +1,33 @@
-# MultiMac Demo - macOS App Distribution
+# MultiMac Demo - Encrypted Distribution
 
-## Quick Install
+This package contains an encrypted version of MultiMac Demo.
 
-### One-line installer (recommended):
+## Installation
+
+### Method 1: One-line installer (recommended)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/RenzRBX/multimac-demo-private/main/encrypted_release/install-multimac.sh | bash
+curl -fsSL YOUR_GITHUB_RAW_URL/install-multimac.sh | bash
 ```
 
-Then enter the passphrase when prompted (provided separately).
-
-### Manual Installation:
-1. Download `multimac-demo.app.tar.gz.enc`
-2. Decrypt:
+### Method 2: Manual installation
+1. Download: `multimac-demo.tar.gz.enc`
+2. Decrypt with provided passphrase:
    ```bash
    openssl enc -d -aes-256-cbc -pbkdf2 \
-     -in multimac-demo.app.tar.gz.enc | tar -xz -C /Applications
+     -in multimac-demo.tar.gz.enc | tar -xz
    ```
-3. Open: `Applications/MultiMac Demo.app`
+3. Run `install.sh`
 
 ## Requirements
 - macOS 11.0 or later
-- Homebrew (auto-installed)
-- Python 3.11 (auto-installed)
+- Internet connection
+- Decryption passphrase (provided separately)
 
-## Security
-✅ AES-256 encryption  
-✅ PyArmor code obfuscation  
-✅ Private GitHub distribution  
+## Security Features
+✅ AES-256 encryption
+✅ Code obfuscation with PyArmor
+✅ Private distribution
 ✅ Separate passphrase delivery
 
 ## Support
-GitHub: https://github.com/RenzRBX/multimac-demo-private
+GitHub: https://github.com/YOUR_USERNAME/multimac-demo
