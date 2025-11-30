@@ -51,7 +51,7 @@ MultiMac-Demo/
    curl -fsSL https://raw.githubusercontent.com/RenzRBX/multimac-demo-private/main/encrypted_release/install-multimac.sh | bash
    ```
 
-2. **Enter passphrase:** `MultiMac2025!Demo`
+2. **Enter passphrase:** ``
 
 3. **App opens → Key dialog appears**
 

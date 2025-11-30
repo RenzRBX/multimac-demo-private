@@ -17,3 +17,4 @@ requests>=2.31.0
 # Optional: For code obfuscation
 # Uncomment if you want to encrypt the source
 # pyarmor>=8.0.0
+# YouTube Key System - No external deps needed
