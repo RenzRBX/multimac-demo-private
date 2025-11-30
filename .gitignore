@@ -17,3 +17,6 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+dist_secure/ git rm -r --cached dist_secure
+dist_secure/
+dist_secure/
