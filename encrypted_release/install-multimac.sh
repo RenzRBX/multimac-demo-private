@@ -5,7 +5,7 @@ echo "===================================="
 echo ""
 
 INSTALL_DIR="$HOME/MultiMac-Demo"
-REPO_URL="YOUR_GITHUB_RAW_URL"
+REPO_URL="https://raw.githubusercontent.com/RenzRBX/multimac-demo-private/main/encrypted_release"
 
 # Create install directory
 mkdir -p "$INSTALL_DIR"
