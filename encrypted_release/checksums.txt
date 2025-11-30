@@ -1,1 +1,1 @@
-68cee4777464af54ead136595d40ddb6ecb7ebf2cf229b70fd4b49da3bcbb68c  multimac-demo.tar.gz.enc
+b284c17160f51b3829b1265ef0d7c23166e2fc7423ce77de40a834bdb9828ced  multimac-demo.app.tar.gz.enc
