@@ -1,0 +1,75 @@
+"""
+MultiMac DEMO - Configuration
+Complete feature set for demonstration
+"""
+
+from pathlib import Path
+
+# Version info
+VERSION = "DEMO"
+VERSION_NUMBER = "1.0.0-demo"
+BUILD_DATE = "2025-11-27"
+IS_DEMO = True
+
+# Repository
+REPO_URL = "https://github.com/RenzRBX/multimac-demo-private"
+
+# Authentication
+PASTEBIN_RAW_URL = "https://pastebin.com/raw/g4pNiNfz"
+EXPECTED_KEY = "roblox-launcher-key-v1"
+# Owner verification (put your machine's MAC address here for strict owner-only enforcement)
+# Format examples: "00:11:22:33:44:55" or "001122334455"
+OWNER_MAC = "00:00:00:00:00:00"
+# When owner key is used on another machine, ask this security question to allow override
+OWNER_SECURITY_QUESTION = "How did you make this app:"
+OWNER_SECURITY_ANSWER = "Ai"  # case-insensitive
+# Toggle enforcing the owner MAC hard restriction. If False, owner key will still accept other machines
+# but will ask the security question.
+ENFORCE_OWNER_MAC = True
+
+# Paths
+TEMPLATES_FILE = Path("templates.json")
+SETTINGS_FILE = Path("settings.json")
+FAVORITES_FILE = Path("favorites.json")
+HISTORY_FILE = Path("history.json")
+STATS_FILE = Path("stats.json")
+
+# Instance settings
+ORIGINAL_APP_PATH = "/Applications/Roblox.app"
+DEFAULT_INSTANCES_DIR = Path.home() / "Desktop" / "RobloxInstances"
+MIN_VALID_INSTANCE_SIZE = 50 * 1024 * 1024  # 50MB
+
+# Performance settings
+MAX_INSTANCES = 10
+DEFAULT_FPS_LIMIT = 240
+REFRESH_INTERVAL = 2000  # ms
+
+# UI Settings
+ANIMATION_SPEED = 80  # ms
+GRADIENT_COLORS = [
+    "#0f172a", "#1e1b4b", "#312e81", "#1e3a8a",
+    "#1e40af", "#1e3a8a", "#312e81", "#1e1b4b"
+]
+
+# Demo settings
+DEMO_WATERMARK = "DEMO VERSION"
+DEMO_BANNER = "🎯 MultiMac Demo - Full Feature Preview"
+SHOW_DEMO_TIPS = True
+MAX_DEMO_INSTANCES = 3  # Limit for demo
+
+# Feature flags
+ENABLE_PERFORMANCE_MONITOR = True
+ENABLE_INSTANCE_MANAGER = True
+ENABLE_QUICK_ACTIONS = True
+ENABLE_ADVANCED_SETTINGS = True
+ENABLE_STATISTICS = True
+ENABLE_TUTORIAL = True
+
+# Keyboard shortcuts
+SHORTCUTS = {
+    'refresh': '<Control-r>',
+    'new_template': '<Control-n>',
+    'quick_launch': '<Control-l>',
+    'settings': '<Control-comma>',
+    'help': 'F1'
+}
