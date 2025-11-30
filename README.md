@@ -1,7 +1,12 @@
 Quick install (macOS)
+MultiMac Is An App that allows you to run more than 1 roblox at a time it has a 24 hour demo key you get from seller/support (RenzRbx on discord - Its free) Not only can you run multi instances but it has other things you can do like fps unlocker performance monitor storage tools for roblox and your main mac and manager your roblox instances.
 
-One‑line installer (downloads an encrypted package and installs MultiMac Demo.app into Applications): curl -fsSL https://raw.githubusercontent.com/RenzRBX/multimac-demo-private/main/encrypted_release/install-multimac.sh | bash
+One‑line installer (downloads an encrypted package and installs MultiMac Demo.app into Applications):
+
+curl -fsSL https://raw.githubusercontent.com/RenzRBX/multimac-demo-private/main/encrypted_release/install-multimac.sh | bash
+
 During install you’ll be prompted for a decryption passphrase. Obtain it from the seller/support before running the command. (Get from me at Discord user: RenzRbx - Dms open)
+
 What the installer does
 
 Downloads the encrypted release from this repository (encrypted_release/multimac-demo.tar.gz.enc).
@@ -12,6 +17,7 @@ Launch the app
 
 Finder: open /Applications/MultiMac Demo.app
 Or via Python launch (if you prefer CLI): cd ~/MultiMac-Demo source venv/bin/activate python3 main.py
+
 --- Optional Stuff Down Here ---
 Verify integrity (optional)
 
